@@ -1,0 +1,6 @@
+sender/build
+sender/.vscode
+sender/.devcontainer
+receiver/build
+receiver/.vscode
+receiver/.devcontainer

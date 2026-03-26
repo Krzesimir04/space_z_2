@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Krzesimir",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp_sender", "top": 0, "left": 150, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp_receiver", "top": 0, "left": 0, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp_receiver:GND.1", "esp_receiver:14", "red", [ "v0" ] ],
+    [ "esp_receiver:4", "esp_sender:17", "green", [ "v0" ] ],
+    [ "esp_receiver:5", "esp_sender:16", "blue", [ "v0" ] ],
+    [ "esp_receiver:GND.1", "esp_sender:GND.1", "black", [ "v0" ] ],
+    [ "esp_sender:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp_sender:RX", "$serialMonitor:TX", "", [] ]
+
+  ],
+  "dependencies": {}
+}
