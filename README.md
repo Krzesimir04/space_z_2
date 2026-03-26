@@ -30,7 +30,7 @@ Projekt został w pełni przygotowany przy użyciu rozszerzenia **Wokwi Simulato
 
 ## Format danych
 
-Nadawca cyklicznie dystrybuuje po magistrali różne typy ramek o określonych ID. Każda z nich może nieść od 1 do 8 bajtów danych:
+Nadawca cyklicznie dystrybuuje po magistrali różne typy ramek o określonych ID - priorytetach:
 
 - ID 0x10 (Temperatura): Ramka 1-bajtowa. Przekazuje aktualny odczyt z czujników (np. 25°C).
 
